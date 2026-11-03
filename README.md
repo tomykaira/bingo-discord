@@ -34,7 +34,7 @@ Discord ──(HTTPS, Ed25519 署名付き)──▶ Cloudflare Worker (src/inde
    ```sh
    npm install
    npx wrangler login
-   npx wrangler d1 create bingo        # 出力された database_id を wrangler.jsonc に書く
+   npx wrangler d1 create heki-bingo   # 出力された database_id を wrangler.jsonc に書く（binding は "DB" のまま）
    npm run db:migrate:remote
    ```
 4. **Worker をデプロイする**:

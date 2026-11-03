@@ -9,8 +9,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "cf-typegen": "wrangler types",
-    "db:migrate:local": "wrangler d1 migrations apply bingo --local",
-    "db:migrate:remote": "wrangler d1 migrations apply bingo --remote",
+    "db:migrate:local": "wrangler d1 migrations apply heki-bingo --local",
+    "db:migrate:remote": "wrangler d1 migrations apply heki-bingo --remote",
     "register": "node --env-file=.dev.vars scripts/register-commands.mjs"
   },
   "devDependencies": {
