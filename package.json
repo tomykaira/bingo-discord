@@ -1,0 +1,21 @@
+{
+  "name": "bingo-discord",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "cf-typegen": "wrangler types",
+    "db:migrate:local": "wrangler d1 migrations apply bingo --local",
+    "db:migrate:remote": "wrangler d1 migrations apply bingo --remote",
+    "register": "node --env-file=.dev.vars scripts/register-commands.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0",
+    "wrangler": "^4.0.0"
+  }
+}

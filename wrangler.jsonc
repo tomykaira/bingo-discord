@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bingo-discord",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bingo",
+      // `npx wrangler d1 create bingo` の出力にある database_id に置き換える
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ]
+  // シークレット DISCORD_PUBLIC_KEY は `npx wrangler secret put DISCORD_PUBLIC_KEY` で設定する
+}

@@ -1,0 +1,7 @@
+# Discord Developer Portal > General Information
+DISCORD_PUBLIC_KEY=
+DISCORD_APPLICATION_ID=
+# Discord Developer Portal > Bot > Token（コマンド登録スクリプトだけが使う。Worker には渡さない）
+DISCORD_TOKEN=
+# 指定するとそのサーバーにだけ即時登録する（開発用）。空ならグローバル登録になる
+DISCORD_GUILD_ID=
